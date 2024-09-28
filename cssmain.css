@@ -1,0 +1,662 @@
+/**
+ * Body CSS
+ */
+html,
+body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+html,
+body,
+input,
+textarea,
+buttons {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+/**
+ * Header CSS
+*/
+#sidedrawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #ffffff;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.sidedrawer-open {
+    transform: translateX(0);
+}
+
+.mui-appbar {
+    background-color: #0269e5; /* Цвет фона для примера */
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header .mui-container-fluid {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    padding-top: 5px; /* Установите желаемое значение отступа сверху */
+}
+
+header .mui--text-right {
+    margin-left: auto; /* Сдвинуть блок с ссылками вправо */
+    padding-top: 4px; /* Установите желаемое значение отступа сверху */
+}
+
+header ul.mui-list--inline {
+    margin-bottom: 0;
+}
+
+.mui-container-fluid {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    width: 100%; /* Убедитесь, что контейнер занимает полную ширину */
+}
+
+.icon-toggle {
+    margin-top: 15px; /* Установите желаемое значение отступа сверху */
+}
+
+#sidedrawer ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background: #096fd9; /* Начальный цвет фона */
+    transition: background 0.5s ease;
+    border-radius: 5px;
+}
+
+#sidedrawer ul li a:hover {
+    background: linear-gradient(270deg, #096fd9, #feb47b);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*
+кнопка в верх
+ */
+
+
+/*
+ * вкладки
+ */
+
+
+.tab-content .mui-tabs__pane {
+    display: none;
+}
+
+.tab-content .mui-tabs__pane:target {
+    display: block;
+}
+
+.mui-tabs__bar {
+    background-color: #096fd9; /* Темный фон для панели вкладок */
+}
+
+.mui-tabs__bar li {
+    margin: 0; /* Убирает отступы между элементами списка */
+}
+
+.mui-tabs__bar a h4 {
+    color: #ffffff; /* Белый цвет текста */
+    margin: 0; /* Убирает отступы у заголовка */
+    padding: 10px; /* Добавляет отступы внутри ссылки */
+    display: block; /* Заставляет ссылку занимать всю ширину ячейки */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.mui-tabs__bar li:hover a h4 {
+    background-color: #bd5b49; /* Цвет фона при наведении */
+}
+
+.tag-1 a h4 {
+    background-color: #fd7d5f; /* Фоновый цвет для активной вкладки */
+    border-radius: 5px; /* Закругление углов для вкладки */
+}
+
+.tag-2 a h4 {
+    background-color: #fd7d5f; /* Фоновый цвет для активной вкладки */
+    border-radius: 5px; /* Закругление углов для вкладки */
+}
+
+.tag-3 a h4 {
+    background-color: #fd7d5f; /* Фоновый цвет для активной вкладки */
+    border-radius: 5px; /* Закругление углов для вкладки */
+}
+
+.tag-1{
+    background-color: #096fd9;
+    color: white;
+}
+
+.tag-2{
+    background-color: #096fd9;
+    color: white;
+}
+
+.tag-3{
+    background-color: #096fd9;
+    color: white;
+}
+
+/**
+ * Content CSS
+ */
+#content-wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    margin-bottom: -80px;
+    padding-bottom: 80px;
+}
+/**
+ * Layout CSS
+ */
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    transition: left 0.2s;
+}
+
+#sidedrawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    left: -200px;
+    overflow: auto;
+    z-index: 2;
+    background: linear-gradient(270deg, #096fd9, #feb47b);
+    transition: transform 0.2s;
+}
+
+#sidedrawer-brand .mui--text-title {
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+#content-wrapper {
+    min-height: 100%;
+    overflow-x: hidden;
+    margin-left: 0px;
+    transition: margin-left 0.2s;
+
+    /* sticky bottom */
+    box-sizing: border-box;
+    margin-bottom: -160px;
+    padding-bottom: 160px;
+}
+
+
+#footer {
+    box-sizing: border-box;
+    height: 160px;
+    margin-left: 0px;
+    transition: margin-left 0.2s;
+}
+
+@media (min-width: 768px) {
+    #header {
+        left: 200px;
+    }
+
+    #sidedrawer {
+        transform: translate(200px);
+    }
+
+    #content-wrapper {
+        margin-left: 200px;
+    }
+
+    #footer {
+        margin-left: 200px;
+    }
+
+    body.hide-sidedrawer #header {
+        left: 0;
+    }
+
+    body.hide-sidedrawer #sidedrawer {
+        transform: translate(0px);
+    }
+
+    body.hide-sidedrawer #content-wrapper {
+        margin-left: 0;
+    }
+
+    body.hide-sidedrawer #footer {
+        margin-left: 0;
+    }
+}
+
+/**
+ * Toggle Sidedrawer
+ */
+#sidedrawer.active {
+    transform: translate(200px);
+}
+
+
+/**
+ * Header CSS
+ */
+
+.sidedrawer-toggle {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.sidedrawer-toggle:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/**
+ * Sidedrawer CSS
+ */
+
+#sidedrawer ul ul {
+    display: none; /* Скрывает вложенные списки по умолчанию */
+}
+
+
+#sidedrawer-brand {
+    padding-left: 20px;
+}
+
+#sidedrawer ul {
+    list-style: none;
+}
+
+#sidedrawer > ul {
+    padding-left: 0px;
+}
+
+#sidedrawer > ul > li:first-child {
+    padding-top: 15px;
+}
+
+#sidedrawer strong {
+    display: block;
+    padding: 15px 22px;
+    cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+    background: linear-gradient(270deg, #fcb37b, #096fd9);
+}
+
+#sidedrawer strong + ul > li {
+    padding: 6px 0px;
+}
+
+
+/**
+ * Footer CSS
+ */
+
+#footer {
+    background-color: #0288D1;
+    color: #fff;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+/*
+Видео
+ */
+.video-container {
+    display: flex;
+    justify-content: center; /* Центрирует видео по горизонтали */
+    align-items: center; /* Центрирует видео по вертикали */
+    margin: 20px; /* Отступы вокруг контейнера */
+    padding: 0; /* Убирает внутренние отступы */
+    width: 100%; /* Задает ширину контейнера */
+    height: auto; /* Высота адаптивная */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%; /* Уменьшает ширину видео до 80% */
+    max-width: 800px; /* Максимальная ширина контейнера */
+    padding-top: 35%;
+    height: 0; /* Высота устанавливается через padding */
+    overflow: hidden; /* Скрывает часть видео, выходящую за пределы */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Заполняет ширину контейнера */
+    height: 100%; /* Заполняет высоту контейнера */
+}
+
+
+/**
+ * Text CSS
+ */
+
+
+pre[class*="language-"] {
+    padding: 20px;
+    margin: 0 0 30px;
+    overflow: auto;
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+    color: #07a;
+}
+
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+    color: #690;
+}
+
+
+div.code-toolbar {
+    position: relative;
+}
+
+div.code-toolbar>.toolbar .toolbar-item {
+    display: inline-block;
+}
+
+div.code-toolbar>.toolbar span {
+    display: block;
+    background: #faf9f8;
+    border: 1px solid #e6e6e6;
+    font-size: .8em;
+    padding: 2px 10px;
+}
+
+div.code-toolbar>.toolbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.token.attr-value{
+    color: #07a;
+}
+
+.token.attr-name{
+    color: #690;
+}
+
+.code-toolbar{
+    background: #e1e0e0;
+    border: 1px solid #e6e6e6;
+}
+
+.token.tag{
+    color: #905;
+}
+
+.token.punctuation{
+    color: #999;
+}
+
+.zag{
+    list-style: circle;
+    margin-bottom: 10px;
+}
+
+h3{
+    margin-bottom: 15px;
+}
+
+.size-page-image{
+    width: 250px;
+    float: left;
+    margin: 30px 20px;
+}
+
+jk{
+    color: black;
+}
+
+kpg{
+    background: #e8e8e8
+}
+
+
+.text {
+    border: 0 solid rgb(230, 230, 231);
+    margin: 20px auto;
+    padding: 10px; /* Исправлено с pading на padding */
+    width: 100%; /* Изменено на 100%, чтобы занимать всю ширину */
+    max-width: 1200px; /* Максимальная ширина для больших экранов */
+    font-size: 5vw; /* Размер шрифта будет 5% от ширины окна просмотра */
+    word-break: break-all;
+}
+element.style {
+    color: rgb(150, 203, 254);
+}
+.baner{
+    width:1000px;
+    padding-left: 10px;
+
+}
+.stk-reset{
+    margin-left: 1.3em;
+    margin-top: 10px;
+}
+.stk-mask img {
+    width: 100%; /* Изображение будет занимать 100% ширины родительского контейнера */
+    height: auto; /* Высота будет автоматически подстраиваться для сохранения пропорций */
+}
+.fixed-caption {
+    width: 1000px; /* Фиксированная ширина блока */
+    margin: 10px auto; /* Центрирование блока с небольшим отступом сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 12px; /* Установите желаемый размер шрифта */
+}
+
+.small-text {
+    font-size: 15px; /* Установите желаемый размер шрифта */
+}
+
+.h3-small {
+    font-size: 23px; /* Установите желаемый размер шрифта для h3 */
+}
+
+/*
+банер
+ */
+.baner-2 {
+    background: #eeecec;
+    border-radius: 10px; /* Закругление углов */
+    padding: 10px; /* Добавлено для отступа внутри блока */
+}
+
+.baner {
+    padding: 0em; /* Отступы для баннера */
+    background-color: #f0f0f0; /* Цвет фона для баннера */
+    width: 100%; /* Ширина баннера 90% от родительского элемента */
+    max-width: 1500px; /* Максимальная ширина 800px */
+    margin: 0 auto; /* Центрирование баннера */
+    text-align: left; /* Выравнивание текста влево */
+}
+
+.baner-2 {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.baner-2 h3 {
+    display: inline-block;
+    font-size: 26px;
+}
+
+.hljs {
+    display: block;
+    width: 100%; /* Ширина блока 100% */
+    overflow-x: auto; /* Плавный скроллинг по оси X */
+    padding: 0.5em; /* Отступы внутри блока */
+    background: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
+
+}
+
+.hljs-tag {
+    color: rgb(150, 203, 254);
+}
+
+.hljs-name {
+    color: rgb(150, 203, 254);
+}
+
+.hljs-string {
+    color: rgb(168, 255, 96);
+}
+
+.hljs-attr {
+    color: rgb(168, 255, 96); /* Цвет для атрибутов */
+}
+
+.hljs-text{
+    color: #cccccc;
+}
+
+strong{
+    color: #ffffff;
+}
+/*
+таблица
+ */
+.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
+    color: #905;
+}
+
+.token.function, .token.class-name {
+    color: #DD4A68;
+}
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+    color: #9a6e3a;
+}
+
+table {
+    width: 100%; /* Установите желаемую ширину таблицы */
+    margin: 0 auto; /* Центрирование таблицы */
+    border-collapse: collapse; /* Убирает двойные границы */
+}
+
+th, td {
+    padding: 5px; /* Уменьшение отступов внутри ячеек */
+    text-align: left; /* Выравнивание текста по центру */
+}
+
+th {
+    background-color: #f0f0f0; /* Цвет фона заголовков */
+}
+
+/*
+таблица
+ */
+.t3 {
+    border-collapse: collapse; /* Убирает двойные границы */
+    width: 100%; /* Задает ширину таблицы */
+}
+
+.t3 caption {
+    font-weight: bold; /* Делает заголовок таблицы жирным */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.t3 td {
+    border: 1px solid #000; /* Черная граница для ячеек */
+    padding: 8px; /* Отступ внутри ячейки */
+}
+
+table {
+    width: 100%;
+    border: 1px solid #736f6f;
+    margin-bottom: 30px;
+}
+caption {
+    color: #ababab;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: right;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+/*
+нижний предел
+ */
+
+#footer {
+    background-color: #096fd9; /* Цвет фона для футера */
+    padding: 1em; /* Отступы для футера */
+    text-align: left; /* Выравнивание текста влево */
+}
+
+.mui--text-left {
+    text-align: left; /* Дополнительное выравнивание текста влево */
+}
