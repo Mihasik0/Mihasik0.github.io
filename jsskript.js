@@ -1,5 +1,3 @@
-
-
 jQuery(function($) {
     var $bodyEl = $('body'),
         $sidedrawerEl = $('#sidedrawer');
