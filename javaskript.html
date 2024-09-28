@@ -1,0 +1,367 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUI Landing Page with Extras</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.muicss.com/mui-latest/extra/mui-colors.min.css">
+
+    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="cssmain.css" rel="stylesheet" type="text/css"/>
+    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jsskript.js"></script>
+</head>
+<body>
+<div id="sidedrawer" class="mui--no-user-select">
+    <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <a class="mui--text-title" href="index.html">Brand.io</a>
+    </div>
+    <div class="mui-divider"></div>
+    <ul>
+        <li>
+            <strong>Курсы</strong>
+            <ul>
+                <li><a href="https://practicum.yandex.ru/frontend-developer-ab/">Yandex</a></li>
+                <li><a href="https://skillbox.ru/course/profession-developer-trial/?utm_source=yandex&utm_medium=cpc&utm_campaign=1873_profession-developer_yandex_cpc_poisk_course_ru_code-trial_skillbox_105214149&utm_content=adg_5381791759|ad_15681654002|ph_49559672434|key_---autotargeting|dev_desktop|pst_premium_4|rgnid_10939_Республика%20Коми|placement_none|creative_{creative_name}&utm_term=---autotargeting&yclid=7231862183104348159">Skillbox</a></li>
+                <li><a href="https://productstar.ru/dev-java-prof?utm_source=Yandex&utm_medium=cpc&utm_campaign=Search_Dev-Java-Prof_August_113768246&utm_term=обучение%20ява%20скрипт&utm_content=08-2024&roistat_referrer=none&roistat_pos=premium_3&roistat=direct4_search_16436229770_обучение%20ява%20скрипт&yclid=13939481950334222335">Productstar</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Игры</strong>
+            <ul>
+                <li><a href="gamecsshtml.html">HTML и CSS</a></li>
+                <li><a href="gamejs.html">JavaScript</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Тренажеры</strong>
+            <ul>
+                <li><a href="https://www.ozaria.com">Ozaria</a></li>
+                <li><a href="https://gridcritters.com/?ref=xranks">Grid Сritters</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<header id="header">
+    <body>
+    <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+            <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+            <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
+            <div class="mui--text-right">
+                <ul class="mui-list--inline mui--text-body2">
+                    <li>
+                        <div class="mui-dropdown">
+                            <button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
+                                <i class="fa fa-user" aria-hidden="true"></i> Опции
+                                <span class="mui-caret"></span>
+                            </button>
+                            <ul class="mui-dropdown__menu">
+                                <li><a href="mem.html">логин</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="mui-tabs__bar mui-tabs__bar--justified">
+        <li><a href="html.html"><h4>HTML</h4></a></li>
+        <li><a href="css.html"><h4>CSS</h4></a></li>
+        <li class="tag-3"><a href="javaskript.html"><h4>JavaScript</h4></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="mui-tabs__pane" id="pane-justified-1">Контент для HTML</div>
+        <div class="mui-tabs__pane" id="pane-justified-2">Контент для CSS</div>
+        <div class="mui-tabs__pane" id="pane-justified-3">Контент для JavaScript</div>
+    </div>
+    </body>
+</header>
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="text">
+        <div class="mui--text-left">
+            <br>
+            <h1>
+                Основы JavaScript
+            </h1>
+            <div>
+                <img width="250" height="250" src="/img/js1.png" class="size-page-image" alt decoding="async" fetchpriority="high">
+            </div>
+            <h3>
+                <strong><jk>JavaScript</jk></strong> создавался как скриптовый язык для браузеров Netscape. Компания Microsoft также признала его потенциал и включила под именем <strong><jk>JScript</jk></strong> в Internet Explorer 3, обеспечив частичную поддержку стандартов языка, что привело в итоге к неразберихе со стандартами и версиями JavaScript. Поэтому Netscape, Microsoft и другие заинтересованные компании обратились в организацию ECMA (Европейская ассоциация производителей компьютеров), где была одобрена первая спецификация языка ECMA-262. В связи с тем, что название «JavaScript» являлось зарегистрированным товарным знаком, для нового стандарта было решено использовать ECMAScript (или сокращенно ES). ECMAScript изначально был разработан для использования в качестве языка сценариев, но позже стал широко использоваться в качестве языка программирования общего назначения.
+            </h3>
+            <h3>
+                В основу создания JavaScript была положена идея динамического управления объектами HTML-документов без перезагрузки текущей страницы (так называемые бессерверные сценарии). Со временем возможности языка расширились:
+            </h3>
+            <div class="zag">
+                <h3>
+                    <ul>
+                        <li class="stk-reset">С помощью JavaScript можно запускать одностраничные приложения на стороне клиента;</li>
+                        <li class="stk-reset">JavaScript используется на стороне сервера с такими технологиями, как Node.js;</li>
+                        <li class="stk-reset">JavaScript помогает создавать настольные приложения с Electron и может использоваться для работы с одноплатными компьютерами типа Raspberry Pi;</li>
+                        <li class="stk-reset">Также, JavaScript используется для обучения моделей машинного обучения в браузере с помощью технологии TensorFlow.js.</li>
+                    </ul>
+                </h3>
+            </div>
+            <h2>
+                Что такое JavaScript?
+            </h2>
+            <h3>
+                1) JavaScript — язык сценариев, или скриптов. Скрипт представляет собой программный код — набор инструкций, который не требует предварительной обработки (например, компиляции) перед запуском. Код JavaScript интерпретируется движком браузера во время загрузки веб-страницы. Интерпретатор браузера выполняет построчный анализ, обработку и выполнение исходной программы или запроса.
+            </h3>
+            <h3>
+                2) JavaScript — объектно-ориентированный язык с прототипным наследованием. Он поддерживает несколько встроенных объектов, а также позволяет создавать или удалять свои собственные (пользовательские) объекты. Объекты могут наследовать свойства непосредственно друг от друга, образуя цепочку объект-прототип.
+            </h3>
+            <h2>
+                Подключение сценариев к html-документу
+            </h2>
+            <h3>
+                Сценарии JavaScript бывают встроенные, т.е. их содержимое является частью документа, и внешние, хранящиеся в отдельном файле с расширением .js. Сценарии можно внедрить в html-документ следующими способами:
+            </h3>
+            <h2>
+                1. В виде гиперссылки
+            </h2>
+            <h3>
+                Для этого нужно разместить код в отдельном файле и включить ссылку на файл в заголовок
+            </h3>
+            <h3>
+            <div class="code-toolbar">
+                <div class="bord code-toolbar">
+            <pre class="language-html"><span class="token tag"><span class="token tag">   <span class="token punctuation"><</span>head</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token punctuation"><</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token attr-value"><span class="token punctuation">=</span></span><span class="token punctuation">"</span>script.js<span class="token punctuation">"</span></span><span class="token punctuation">></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></pre></div>
+                <div class="toolbar">
+                    <div class="toolbar-item">
+                        <span>HTML</span>
+                    </div>
+                </div>
+            </div>
+            </h3>
+        </div>
+        <h3>
+            или тело страницы.
+        </h3>
+        <h3>
+            <div class="code-toolbar">
+                <div class="bord code-toolbar">
+            <pre class="language-html"><span class="token tag"><span class="token tag">   <span class="token punctuation"><</span>body</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token punctuation"><</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token attr-value"><span class="token punctuation">=</span></span><span class="token punctuation">"</span>script.js<span class="token punctuation">"</span></span><span class="token punctuation">></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></pre></div>
+                <div class="toolbar">
+                    <div class="toolbar-item">
+                        <span>HTML</span>
+                    </div>
+                </div>
+            </div>
+        </h3>
+                <h3>
+                    Этот способ обычно применяется для сценариев большого размера или сценариев, многократно используемых на разных веб-страницах.
+                </h3>
+            <h2>
+                В виде обработчика события
+            </h2>
+            <h3>
+                Каждый html-элемент имеет JavaScript-события, которые срабатывают в определенный момент. Нужно добавить необходимое событие в html-элемент как атрибут, а в качестве значения этого атрибута указать требуемую функцию. Функция, вызываемая в ответ на срабатывание события, является обработчиком события. В результате срабатывания события исполнится связанный с ним код. Этот способ применяется в основном для коротких сценариев, например, можно установить смену цвета фона при нажатии на кнопку:
+            </h3>
+        <h3>
+        <div class="code-toolbar"><pre class="lang:default decode:true  language-html"><code class=" language-html"><span class="token tag"><span class="token tag">   <span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">var</span> colorArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"#5A9C6E"</span><span class="token punctuation">,</span> <span class="token string">"#A8BF5A"</span><span class="token punctuation">,</span> <span class="token string">"#FAC46E"</span><span class="token punctuation">,</span> <span class="token string">"#FAD5BB"</span><span class="token punctuation">,</span> <span class="token string">"#F2FEFF"</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment"> // создаем массив с цветами фона</span>
+        <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">function</span> <span class="token function">changeColor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>background <span class="token operator">=</span> colorArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            i<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span> i <span class="token operator">&gt;</span> colorArray<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>changeColor();<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Change background<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div></div></div></h3>
+        <h2>
+            Внутрь элемента <kpg> &lt;script&gt; </kpg>
+        </h2>
+        <h3>
+            Элемент <kpg> &lt;script&gt; </kpg> может вставляться в любое место документа. Внутри тега располагается код, который выполняется сразу после прочтения браузером, или содержит описание функции, которая выполняется в момент ее вызова. Описание функции можно располагать в любом месте, главное, чтобы к моменту ее вызова код функции уже был загружен.
+        </h3>
+        <h3>
+            Обычно код JavaScript размещается в заголовке документа (элемент <kpg> &lt;head&gt; </kpg>) или после открывающего тега <kpg> &lt;body&gt; </kpg>. Если скрипт используется после загрузки страницы, например, код счетчика, то его лучше разместить в конце документа:
+        </h3>
+        <h3>
+        <div class="code-toolbar"><pre class="lang:default decode:true language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Введите свое имя"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div></div></div></h3>
+        <h2>
+            Типы данных и переменные в JavaScript
+        </h2>
+        <h3>
+            Компьютеры обрабатывают информацию — данные. Данные могут быть представлены в различных формах или типах. Большая часть функциональности JavaScript реализуется за счет простого набора объектов и типов данных. Функциональные возможности, связанные со строками, числами и логикой, базируются на строковых, числовых и логических типах данных. Другая функциональная возможность, включающая регулярные выражения, даты и математические операции, осуществляется с помощью объектов <kpg> RegExp </kpg>, <kpg> Date </kpg> и <kpg> Math </kpg>.
+        </h3>
+        <h3>
+            Литералы в JavaScript представляют собой особый класс типа данных, фиксированные значения одного из трех типов данных — строкового, числового или логического:
+        </h3>
+        <h3>
+        <div class="code-toolbar"><pre class="lang:js decode:true  language-javascript"><code class=" language-javascript"><span class="token string">"это строка"</span>
+<span class="token number">3.14</span>
+<span class="token boolean">true</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Hellow"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Hellow" - это литерал</span>
+<span class="token keyword">var</span> myVariable <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span> <span class="token comment">// 15 - это литерал</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div></div></div></h3>
+        <h3>
+            Примитивный тип данных является экземпляром определенного типа данных, таких как строковый, числовой, логический, <kpg> null </kpg> и <kpg> undefined </kpg>.
+        </h3>
+        <h2>
+            Переменные в JavaScript
+        </h2>
+        <h3>
+            Данные, обрабатываемые сценарием JavaScript, являются переменными. Переменные представляют собой именованные контейнеры, хранящие данные (значения) в памяти компьютера, которые могут изменяться в процессе выполнения программы. Переменные имеют имя, тип и значение.
+        </h3>
+        <h3>
+            Имя переменной, или идентификатор, может включать только буквы <kpg>a-z</kpg>, <kpg>A-Z</kpg>, цифры <kpg>0-9</kpg> (цифра не может быть первой в имени переменной), символ <kpg>$</kpg> (может быть только первым символом в имени переменной или функции) и символ подчеркивания <kpg>_</kpg>, наличие пробелов не допускается. Длина имени переменной не ограничена. Можно, но не рекомендуется записывать имена переменных буквами русского алфавита, для этого они должны быть записаны в Unicode.
+        </h3>
+        <h3>
+            В качестве имени переменной нельзя использовать ключевые слова JavaScript. Имена переменных в JavaScript чувствительные к регистру, что означает, что переменная <kpg>var message;</kpg> и <kpg>var Message;</kpg> — разные переменные.
+        </h3>
+        <h3>
+            Переменная создается (объявляется) с помощью ключевого слова <kpg>var</kpg>, за которым следует имя переменной, например, <kpg>var message;</kpg>. Объявлять переменную необходимо перед ее использованием.
+        </h3>
+        <h3>
+            Переменная инициализируется значением с помощью операции присваивания <kpg>=</kpg>, например, <kpg>var message="Hellow";</kpg>, т.е. создается переменная message и в ней сохраняется ее первоначальное значение <kpg>"Hellow"</kpg>. Переменную можно объявлять без значения, в этом случае ей присваивается значение по умолчанию <kpg>undefined</kpg>. Значение переменной может изменяться во время исполнения скрипта. Разные переменные можно объявлять в одной строке, разделив их запятой:
+        </h3>
+        <h3><div class="code-toolbar"><pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">var</span> message<span class="token operator">=</span><span class="token string">"Hellow"</span><span class="token punctuation">,</span> number_msg <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">,</span> time_msg <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div></div></div></h3>
+        <h2>
+            Типы данных переменных
+        </h2>
+        <h3>
+            JavaScript является нетипизированным языком, тип данных для конкретной переменной при ее объявлении указывать не нужно. Тип данных переменной зависит от значений, которые она принимает. Тип переменной может изменяться в процессе совершения операций с данными (динамическое приведение типов). Преобразование типов выполняется автоматически в зависимости от того, в каком контексте они используются. Например, в выражениях, включающих числовые и строковые значения с оператором <kpg>+</kpg>, JavaScript преобразует числовые значения в строковые:
+        </h3>
+        <h3><div class="code-toolbar"><pre class="lang:js decode:true  language-javascript"><code class=" language-javascript"><span class="token keyword">var</span> message <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token string">" дней до отпуска"</span><span class="token punctuation">;</span> <span class="token comment">// вернет "10 дней до отпуска"</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div></div></div></h3>
+        <h3>
+            Получить тип данных, который имеет переменная, можно с помощью оператора <kpg>typeof</kpg>. Этот оператор возвращает строку, которая идентифицирует соответствующий тип.
+        </h3>
+        <h3>
+<div class="code-toolbar"><pre class="lang:js decode:true  language-javascript"><code class=" language-javascript"><span class="token keyword">typeof</span> <span class="token number">35</span><span class="token punctuation">;</span> <span class="token comment">// вернет "number"</span>
+<span class="token keyword">typeof</span> <span class="token string">"text"</span><span class="token punctuation">;</span> <span class="token comment">// вернет "string"</span>
+<span class="token keyword">typeof</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// вернет "boolean"</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// вернет "object"</span>
+<span class="token keyword">typeof</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span> <span class="token comment">// вернет "undefined"</span>
+<span class="token keyword">typeof</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">// вернет "object" </span></code></pre><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div></div></div></h3>
+        <h3>
+            Все типы данных в JavaScript делятся на две группы — простые типы данных (primitive data types) и составные типы данных (composite data types).
+        </h3>
+        <h3>
+            К простым типам данных относят строковый, числовой, логический, <kpg>null</kpg> и <kpg>underfined</kpg>.
+        </h3>
+        <h2>
+            Ключевые слова JavaScript
+        </h2>
+        <h3>
+            Ключевое слово представляет собой зарезервированное слово языка JavaScript. Зарезервированные слова обозначают операторы, типы данных, функции, методы и т.д.
+        </h3>
+        <h3>
+        <table class="t3">
+            <caption>Таблица 1. Ключевые слова JavaScript</caption>
+            <tbody><tr>
+                <td><kpg>break</kpg></td>
+                <td><kpg>finally</kpg></td>
+                <td><kpg>return</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>catch</kpg></td>
+                <td><kpg>for</kpg></td>
+                <td><kpg>static</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>class</kpg></td>
+                <td><kpg>function</kpg></td>
+                <td><kpg>super</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>case</kpg></td>
+                <td><kpg>if</kpg></td>
+                <td><kpg>switch</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>const</kpg></td>
+                <td><kpg>implements</kpg></td>
+                <td><kpg>this</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>continue</kpg></td>
+                <td><kpg>import</kpg></td>
+                <td><kpg>throw</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>debugger</kpg></td>
+                <td><kpg>in</kpg></td>
+                <td><kpg>true</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>default</kpg></td>
+                <td><kpg>instanceof</kpg></td>
+                <td><kpg>try</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>delete</kpg></td>
+                <td><kpg>interface</kpg></td>
+                <td><kpg>typeof</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>do</kpg></td>
+                <td><kpg>let</kpg></td>
+                <td><kpg>var</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>else</kpg></td>
+                <td><kpg>new</kpg></td>
+                <td><kpg>void</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>enum</kpg></td>
+                <td><kpg>package</kpg></td>
+                <td><kpg>while</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>export</kpg></td>
+                <td><kpg>private</kpg></td>
+                <td><kpg>with</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>extends</kpg></td>
+                <td><kpg>protected</kpg></td>
+                <td><kpg>yield</kpg></td>
+            </tr>
+            <tr>
+                <td><kpg>false</kpg></td>
+                <td><kpg>public</kpg></td>
+                <td></td>
+            </tr>
+            </tbody></table></h3>
+        </div>
+    </div>
+<div class="video-container">
+    <div class="video-wrapper">
+        <iframe src="https://rutube.ru/play/embed/4c81ce0f961a31ade94fad7ac890efbc/" frameborder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+</div>
+</div>
+</div>
+<footer id="footer">
+    <div class="mui--text-left">
+        <div class="mui-container-fluid">
+            <h3>
+                Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+            </h3>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUI Landing Page with Extras</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.muicss.com/mui-latest/extra/mui-colors.min.css">
+
+    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="cssmain.css" rel="stylesheet" type="text/css"/>
+    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jsskript.js"></script>
+</head>
+<body>
+<div id="sidedrawer" class="mui--no-user-select">
+    <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <a class="mui--text-title" href="index.html">Brand.io</a>
+    </div>
+    <div class="mui-divider"></div>
+    <ul>
+        <li>
+            <strong>Курсы</strong>
+            <ul>
+                <li><a href="https://practicum.yandex.ru/frontend-developer-ab/">Yandex</a></li>
+                <li><a href="https://skillbox.ru/course/profession-developer-trial/?utm_source=yandex&utm_medium=cpc&utm_campaign=1873_profession-developer_yandex_cpc_poisk_course_ru_code-trial_skillbox_105214149&utm_content=adg_5381791759|ad_15681654002|ph_49559672434|key_---autotargeting|dev_desktop|pst_premium_4|rgnid_10939_Республика%20Коми|placement_none|creative_{creative_name}&utm_term=---autotargeting&yclid=7231862183104348159">Skillbox</a></li>
+                <li><a href="https://productstar.ru/dev-java-prof?utm_source=Yandex&utm_medium=cpc&utm_campaign=Search_Dev-Java-Prof_August_113768246&utm_term=обучение%20ява%20скрипт&utm_content=08-2024&roistat_referrer=none&roistat_pos=premium_3&roistat=direct4_search_16436229770_обучение%20ява%20скрипт&yclid=13939481950334222335">Productstar</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Игры</strong>
+            <ul>
+                <li><a href="gamecsshtml.html">HTML и CSS</a></li>
+                <li><a href="gamejs.html">JavaScript</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Тренажеры</strong>
+            <ul>
+                <li><a href="https://www.ozaria.com">Ozaria</a></li>
+                <li><a href="https://gridcritters.com/?ref=xranks">Grid Сritters</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<header id="header">
+    <body>
+    <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+            <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+            <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
+            <div class="mui--text-right">
+                <ul class="mui-list--inline mui--text-body2">
+                    <li>
+                        <div class="mui-dropdown">
+                            <button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
+                                <i class="fa fa-user" aria-hidden="true"></i> Опции
+                                <span class="mui-caret"></span>
+                            </button>
+                            <ul class="mui-dropdown__menu">
+                                <li><a href="mem.html">логин</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="mui-tabs__bar mui-tabs__bar--justified">
+        <li class="tag-1"><a href="html.html"><h4>HTML</h4></a></li>
+        <li><a href="css.html"><h4>CSS</h4></a></li>
+        <li><a href="javaskript.html"><h4>JavaScript</h4></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="mui-tabs__pane" id="pane-justified-1">Контент для HTML</div>
+        <div class="mui-tabs__pane" id="pane-justified-2">Контент для CSS</div>
+        <div class="mui-tabs__pane" id="pane-justified-3">Контент для JavaScript</div>
+    </div>
+    </body>
+</header>
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+        <div class="text">
+            <div class="mui--text-left">
+            <br>
+            <h1>Язык HTML: что это такое и как он работает</h1>
+            </div>
+            <p>
+            <div>
+                <h3>
+                    <strong><jk>HTML</jk></strong> (от английского HyperText Markup Language) - это язык гипертекстовой разметки текста. Он нужен, чтобы размещать на веб-странице элементы: текст, картинки, таблицы и видео.
+                </h3>
+            </div>
+            </p>
+            <p>
+            <div>
+                <h3>
+                    Когда вы заходите на сайт, браузер подгружает HTML-файл с информацией о структуре и контенте веб-страницы. HTML как бы выстраивает визуальный фундамент сайта, но не «запускает» сайт самостоятельно. Он всего лишь указывает, где располагаются элементы, какой у них будет базовый дизайн, откуда брать <a href="https://skillbox.ru/media/code/chto_takoe_css/">стили для элементов</a> и скрипты (обычно их пишут на JavaScript).
+                </h3>
+            </div>
+            </p>
+            <h3>Вот, например, как выглядит сайт Skillbox Media на одном HTML:</h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/html.png" width="800" height="480">
+                </div>
+            </div>
+            <div class="mui--text-center">
+                <h1>Из чего состоит HTML-код</h1>
+            </div>
+            <h3>HTML состоит из тегов — команд, которые указывают браузеру, как отображать помещённый в них текст. Это и есть элементы веб-страницы. У каждого тега есть имя, которое заключается в угловые скобки
+                <kpg><</kpg> и&nbsp;<kpg>></kpg>.
+            </h3>
+            <h3>
+                Например, в тег <kpg><</kpg><kpg>p</kpg><kpg>></kpg>.
+            </h3>
+            <div class="baner">
+                <div class="mui--text-left">
+                    <h3>
+                        <pre class="hljs adaptive-code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Привет, мир!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+                    </h3>
+                </div>
+            </div>
+            <h3>Теги бывают парные и непарные. Парные состоят из двух тегов - открывающего и закрывающего, а непарные - из одного. При этом непарный тег тоже можно закрывать, но это необязательно.</h3>
+            <h3>
+                Например, тег <kpg><</kpg><kpg>img</kpg><kpg>></kpg>, который позволяет разместить картинку на сайте, - непарный:
+            </h3>
+            <div class="baner">
+                <div class="mui--text-left">
+                    <h3>
+                        <pre class="hljs adaptive-code"><span class="hljs-tag">&lt;<span class="hljs-name">img src=</span><span class="hljs-string">'bird.jpg'</span><span class="hljs-attr"> alt=</span><span class="hljs-string">'photo of bird'</span>&gt;</span></pre>
+                    </h3>
+                </div>
+            </div>
+            <h3>
+                У каждого тега есть атрибуты. С их помощью можно передавать элементам веб-страницы дополнительные данные: размеры, уникальный id элемента, ссылки на изображения и так далее.
+            </h3>
+            <h3>
+                Элемент <kpg><</kpg><kpg>img</kpg><kpg>></kpg> включает в себя два основных атрибута - <kpg>scr</kpg> и <kpg>alt</kpg>. Первый добавляет ссылку на файл, а второй — подпись к картинке, которая покажется, если файл не загрузится:
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/zagry.png" width="800" height="480">
+                </div>
+                <div class="mui--text-dark-secondary h3-small">Так работает атрибут alt, если картинка не загрузилась</div>
+            </div>
+            <h3>
+                Тег <kpg><</kpg><kpg>p</kpg><kpg>></kpg> - парный, он всегда должен закрываться тегом <kpg><</kpg><kpg>/p</kpg><kpg>></kpg>. Парные теги применяются для разметки блоков — элементов, в которые можно вкладывать другие элементы (в том числе блоки). К ним относятся:
+            </h3>
+            <div class="zag">
+                <h3>
+                    <ul>
+                        <li class="stk-reset">контейнеры ( <kpg>div</kpg> );</li>
+                        <li class="stk-reset">Абзацы;</li>
+                        <li class="stk-reset">Заголовки;</li>
+                        <li class="stk-reset">Списки;</li>
+                        <li class="stk-reset">Таблицы;</li>
+                    </ul>
+                </h3>
+            </div>
+            <h3>
+                Так выглядит код веб-страницы с тегами <kpg><</kpg><kpg>p</kpg><kpg>></kpg> и <kpg><</kpg><kpg>img</kpg><kpg>></kpg>:
+            </h3>
+            <div class="baner">
+                <div class="mui--text-left">
+                 <h3>
+ <pre class="hljs adaptive-code">
+ <span class="hljs-tag">&lt;<span class="hljs-name">p</span>>
+       <span class="hljs-text">Какой-нибудь сопроводительный текст. Обычно в примерах используют
+lorem ipsum, но мы пишем всё сами -- хардкор!</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">p</span>>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img src=</span><span class="hljs-string">'bird.jpg'</span>>
+ <span class="hljs-tag">&lt;<span class="hljs-name">p</span>><span class="hljs-text">А тут ещё один абзац, чтобы заполнить пустоту.</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>></pre>
+                 </h3>
+                </div>
+            </div>
+            <h3>
+                А вот как его отображает браузер:
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/skill.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Теперь добавим ещё один тег - <kpg><</kpg><kpg>center</kpg><kpg>></kpg> . Он центрирует элементы на экране. Затем положим в него теги <u><</u><u>p</u><u>></u> и <u><</u><u>img</u><u>></u>:
+            </h3>
+            <div class="baner">
+                <div class="mui--text-left">
+                    <h3>
+ <pre class="hljs adaptive-code">
+ <span class="hljs-tag">&lt;<span class="hljs-name">center</span>>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>>
+       <span class="hljs-text">Какой-нибудь сопроводительный текст.Обычно в примерах используют
+lorem ipsum, но мы пишем всё сами -- хардкор!</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img src=</span><span class="hljs-string">'bird.jpg'</span>>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>><span class="hljs-text">А тут ещё один абзац, чтобы заполнить пустоту.</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>>
+ <span class="hljs-tag">&lt;<span class="hljs-name">center</span>></pre>
+                    </h3>
+                </div>
+            </div>
+            <h3>
+                У нас получился такой результат:
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/skill-cen.png" width="800" height="480">
+                </div>
+            </div>
+            <h1>
+                Как HTML работает на сайтах
+            </h1>
+            <h3>
+                Давайте разберём, как браузеры отрисовывают веб-страницы с помощью HTML-файлов.
+            </h3>
+            <h3>
+                Принцип работы разметки следующий:
+            </h3>
+            <div class="zag">
+                <h3>
+                    <ul>
+                        <li class="stk-reset">Вы вводите в адресную строку адрес сайта или страницы.</li>
+                        <li class="stk-reset">Браузер отправляет запрос по этому адресу и получает файл в формате HTML.</li>
+                        <li class="stk-reset">Код из полученного файла последовательно преобразуется в визуальные объекты.</li>
+                    </ul>
+                </h3>
+            </div>
+            <h3>
+                При этом каждый браузер руководствуется своими правилам отображения элементов. Раньше разработчикам приходилось создавать отдельные версии сайтов для Internet Explorer, Firefox, Opera и других браузеров. Стоило только не учесть какую-то особенность браузера, и сайт падал на глазах у разочарованных пользователей. К счастью, организация W3C разработала <a href="https://skillbox.ru/media/code/vebstandarty-zachem-i-kak-ikh-izuchat/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox">веб-стандарты</a> - чтобы сайты отображались более или менее одинаково во всех браузерах.
+            </h3>
+            <h3>
+                Но и от обыкновенных ошибок никто не застрахован. Если разработчик по невнимательности не закроет тег или добавит содержимое куда-нибудь не туда, на странице вылезет что-то неожиданное. Допустим, мы написали таблицу:
+            </h3>
+            <div class="baner">
+                <div class="mui--text-left">
+                    <h3>
+ <pre class="hljs adaptive-code">
+ <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-tag">border=</span><span class="hljs-string">"1"</span>>
+
+     <span class="hljs-tag"><<span class="hljs-name">tr</span>>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>><span class="hljs-text">№</span><span class="hljs-tag">&lt;<span class="hljs-name">/th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Позиция</span><span class="hljs-tag">&lt;<span class="hljs-name">/th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Цена за единицу (руб).</span>&lt;<span class="hljs-name">/th</span>>
+     <span class="hljs-tag"><<span class="hljs-name">/tr</span>>
+     <span class="hljs-tag"><<span class="hljs-name">tr</span>>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>><span class="hljs-text">1</span><span class="hljs-tag">&lt;<span class="hljs-name">/th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Ручка синяя</span><span class="hljs-tag">&lt;<span class="hljs-name">/th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">8</span>&lt;<span class="hljs-name">/th</span>>
+     <span class="hljs-tag"><<span class="hljs-name">/tr</span>>
+     <span class="hljs-tag"><<span class="hljs-name">tr</span>>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>><span class="hljs-text">2</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Карандаш с ластком</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">10</span>&lt;<span class="hljs-name">th</span>>
+     <span class="hljs-tag"><<span class="hljs-name">/tr</span>>
+     <span class="hljs-tag"><<span class="hljs-name">tr</span>>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>><span class="hljs-text">3</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Линейка (30 см)</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">30</span>&lt;<span class="hljs-name">th</span>>
+     <span class="hljs-tag"><<span class="hljs-name">/tr</span>>
+     <span class="hljs-tag"><<span class="hljs-name">tr</span>>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>><span class="hljs-text">4</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Галстук</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">250</span>&lt;<span class="hljs-name">th</span>>
+     <span class="hljs-tag"><<span class="hljs-name">/tr</span>>
+     <span class="hljs-tag"><<span class="hljs-name">tr</span>>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>><span class="hljs-text">5</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">Дырокол</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>>
+        <span class="hljs-tag"><</span><span class="hljs-name">th</span>><span class="hljs-text">100</span>&lt;<span class="hljs-name">th</span>>
+     <span class="hljs-tag"><<span class="hljs-name">/tr</span>>
+ <span class="hljs-tag">&lt;<span class="hljs-name">/table</span>></pre>
+                    </h3>
+                </div>
+            </div>
+            <h3>
+                <kpg><</kpg><kpg>table</kpg><kpg>></kpg> -  это таблица, <kpg><</kpg><kpg>tr</kpg><kpg>></kpg> - это ряд, а <kpg><</kpg><kpg>th</kpg><kpg>></kpg> и <kpg><</kpg><kpg>td</kpg><kpg>></kpg> - ячейки. Если бы мы всё сделали правильно, в браузере бы отобразилась обычная таблица. Но обратите внимание, что в четвёртом ряду цена галстука находится не в ячейке, а прямо в ряду. Вот как это будет выглядеть:
+            </h3>
+            <div class="mui--text-left">
+            <h3>
+            <table border='1'>
+
+                <tr>
+                    <th>№</th>
+                    <th>Позиция</th>
+                    <th>Цена за единицу (руб.)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ручка синяя</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Карандаш с ластиком</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Линейка (30 см)</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Галстук</td>
+                    <td></td>250
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Дырокол</td>
+                    <td>100</td>
+                </tr>
+            </table>
+            </h3>
+            </div>
+            <h4>
+                <div class="mui--text-dark-hint">Над таблицей нависло число 250, потому что браузер не смог определить, где оно должно находиться</div>
+            </h4>
+            <h1>
+                Что можно и нельзя сделать на HTML
+            </h1>
+            <h3>
+                HTML — это каркас сайта. По нему браузер отрисовывает веб-страницу, наводит «красоту» с помощью CSS и добавляет логику через JavaScript. Например, в HTML-файле можно прописать:
+            </h3>
+            <div class="zag">
+                <h3>
+                    <ul>
+                        <li class="stk-reset">гиперссылки;</li>
+                        <li class="stk-reset">таблицы;</li>
+                        <li class="stk-reset">изображения;</li>
+                        <li class="stk-reset">блоки;</li>
+                        <li class="stk-reset">абзацы;</li>
+                        <li class="stk-reset">формы;</li>
+                        <li class="stk-reset">заголовки;</li>
+                    </ul>
+                </h3>
+            </div>
+            <h3>
+                Можно даже задавать простой дизайн напрямую в HTML — например, устанавливать цвет и шрифт текста или фоновый цвет блока. Однако профессионалы не рекомендуют так делать — лучше указывать стили в файле CSS. Там-то ваша фантазия ничем не будет ограничена: задавайте любые отступы, размещайте элементы нестандартными способами, играйтесь с прозрачностью, тенями и анимацией. Всё что угодно — но в CSS. Договорились? :)
+            </h3>
+            <h1>
+                HTML — язык программирования?
+            </h1>
+            <h3>
+                Нет. На языках программирования пишут… программы и веб-приложения :) Для этого в них есть условия, функции, переменные, операторы, классы и много что ещё. В HTML же есть только теги, которые помогают браузеру правильно отобразить содержимое сайта.
+            </h3>
+            <h3>
+                Во многих источниках HTML всё-таки называют языком программирования. Не верьте! HTML — это всего лишь формат текста. По сути, HTML-файл ничем не отличается от «вордовского» файла.
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/html2.png" width="800" height="480">
+                </div>
+            </div>
+            <h4>
+                <div class="mui--text-dark-hint">
+                    Так написано даже в «Википедии», хоть технически это и неверно
+                </div>
+            </h4>
+            <div class="mui--text-left">
+                <h1>
+                    Сколько времени нужно, чтобы освоить HTML
+                </h1>
+                <h3>
+                    Основы, которых хватит на создание примитивных страниц, можно изучить за час. То есть быстрее, чем была написана эта статья. Но мастерство приходит с практикой. Мало просто создать каркас — нужно убедиться, что он везде правильно отображается.
+                </h3>
+                <h3>
+                    Специалисты, которые могут написать не кривой адаптивный сайт, ценятся у работодателей. Но быть просто HTML-верстальщиком невыгодно. Сегодня это довольно редкая и низкооплачиваемая профессия. Лучше сразу изучать фронтенд- или бэкенд-разработку, а HTML обязательно пригодится в процессе.
+                </h3>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe src="https://rutube.ru/play/embed/98c305b15420f3d790a149c1702385f7/" frameborder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer id="footer">
+        <div class="mui--text-left">
+            <div class="mui-container-fluid">
+                    <h3>
+                    Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+                    </h3>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>
