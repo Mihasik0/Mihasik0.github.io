@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUI Landing Page with Extras</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.muicss.com/mui-latest/extra/mui-colors.min.css">
+
+    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="cssmain.css" rel="stylesheet" type="text/css"/>
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.js"></script>
+    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jsskript.js"></script>
+</head>
+<body>
+<div id="sidedrawer" class="mui--no-user-select">
+    <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <a class="mui--text-title" href="index.html">Brand.io</a>
+    </div>
+    <div class="mui-divider"></div>
+    <ul>
+        <li>
+            <strong>Курсы</strong>
+            <ul>
+                <li><a href="https://practicum.yandex.ru/frontend-developer-ab/">Yandex</a></li>
+                <li><a href="https://skillbox.ru/course/profession-developer-trial/?utm_source=yandex&utm_medium=cpc&utm_campaign=1873_profession-developer_yandex_cpc_poisk_course_ru_code-trial_skillbox_105214149&utm_content=adg_5381791759|ad_15681654002|ph_49559672434|key_---autotargeting|dev_desktop|pst_premium_4|rgnid_10939_Республика%20Коми|placement_none|creative_{creative_name}&utm_term=---autotargeting&yclid=7231862183104348159">Skillbox</a></li>
+                <li><a href="https://productstar.ru/dev-java-prof?utm_source=Yandex&utm_medium=cpc&utm_campaign=Search_Dev-Java-Prof_August_113768246&utm_term=обучение%20ява%20скрипт&utm_content=08-2024&roistat_referrer=none&roistat_pos=premium_3&roistat=direct4_search_16436229770_обучение%20ява%20скрипт&yclid=13939481950334222335">Productstar</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Игры</strong>
+            <ul>
+                <li><a href="gamecsshtml.html">HTML и CSS</a></li>
+                <li><a href="gamejs.html">JavaScript</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Тренажеры</strong>
+            <ul>
+                <li><a href="https://www.ozaria.com">Ozaria</a></li>
+                <li><a href="https://gridcritters.com/?ref=xranks">Grid Сritters</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<header id="header">
+    <body>
+    <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+            <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+            <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
+            <div class="mui--text-right">
+                <ul class="mui-list--inline mui--text-body2">
+                    <li>
+                        <div class="mui-dropdown">
+                            <button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
+                                <i class="fa fa-user" aria-hidden="true"></i> Опции
+                                <span class="mui-caret"></span>
+                            </button>
+                            <ul class="mui-dropdown__menu">
+                                <li><a href="mem.html">логин</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="mui-tabs__bar mui-tabs__bar--justified">
+        <li><a href="html.html"><h4>HTML</h4></a></li>
+        <li class="tag-2"><a href="css.html"><h4>CSS</h4></a></li>
+        <li><a href="javaskript.html"><h4>JavaScript</h4></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="mui-tabs__pane" id="pane-justified-1">Контент для HTML</div>
+        <div class="mui-tabs__pane" id="pane-justified-2">Контент для CSS</div>
+        <div class="mui-tabs__pane" id="pane-justified-3">Контент для JavaScript</div>
+    </div>
+    </body>
+</header>
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="text">
+        <div class="mui--text-left">
+            <br>
+            <div class="mui--text-center">
+            <h1>
+                Основы CSS
+            </h1>
+            </div>
+            <h3>
+                Аббревиатура CSS расшифровывается как Cascading Style Sheets, что в переводе означает «каскадные таблицы стилей». Это язык разметки, используемый для визуального оформления веб-сайтов.
+            </h3>
+            <h3>
+                Объекты, расположенные на странице, размещаются с помощью HTML. А вот CSS отвечает за то, как эти объекты выглядят. Их размер, цвет, фоновое изображение, степень прозрачности, расположение относительно других элементов, поведение при наведении курсора, визуальное изменение кнопок при нажатии и т.п.
+            </h3>
+            <h3>
+                Вот сайт, сделанный с помощью одного лишь HTML:
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css1.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                А вот как выглядит та же страница после добавления CSS-разметки и оформления блоков с помощью каскадных таблиц стилей:
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css2.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Практически любые «внешние проявления» сайта создаются с помощью CSS. Это стиль ваших страниц.
+            </h3>
+            <h1>
+                Синтаксис разметки
+            </h1>
+            <h3>
+                Язык CSS быстро стал стандартом в веб-разработке, потому что он позволяет быстро изменить визуальное оформление сайта, не прибегая к использованию более сложных языков программирования.
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css3.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Достаточно ознакомиться с простейшими правилами CSS, и можно легко собрать вполне симпатичный сайт со всем необходимым контентом. «Простота» обеспечивается за счет понятного синтаксиса.
+            </h3>
+            <h3>
+                Синтаксис CSS в отдельном файле в соответствующем формате (.css) выглядит так:
+            </h3>
+            <div class="baner-2"><h3><pre>
+    селектор {
+        свойство: значение;
+    }
+            </pre></h3></div>
+            <div class="zag">
+                <h3>
+                    <ul>
+                        <li class="stk-reset">Селектор – это ссылка на элемент в HTML, над которым будет вестись работа (оформление).</li>
+                        <li class="stk-reset">Свойство – определенная характеристика элемента, которую нужно изменить. Например, размер или цвет.</li>
+                        <li class="stk-reset">Значение – цифровое или текстовое обозначение для выбранного свойства. </li>
+                    </ul>
+                </h3>
+            </div>
+            <h3>
+                Попробуем поменять цвет текста в блоке Попробуем поменять цвет текста в блоке section на красный:
+            </h3>
+            <div class="baner-2"><h3><pre>
+    section {
+        color: red;
+    }
+            </pre></h3></div>
+            <h3>
+                Как видите, все понятно даже без знания разметки. Даже далекий от программирования человек поймет, что происходит в вышеописанном коде. Это самое лучшее в CSS. Все логично.
+            </h3>
+            <h1>
+                Медиазапросы и тег &lt;style&gt;
+            </h1>
+            <h3>
+                Выше был продемонстрирован базовый синтаксис, но он может быть куда более замысловатым. Например, для создания стилей под различные разрешения экранов используются запросы @media. Они выглядят так:
+            </h3>
+            <div class="baner-2"><h3><pre>
+    @media (max-width: 768px) {
+        section: {
+            color: red;
+        }
+    }
+            </pre></h3></div>
+            <h3>
+                Такой код изменит цвет текста на красный в разделе section только для экранов с разрешением меньше 768 пикселей.
+            </h3>
+            <h3>
+                А еще CSS-разметку можно использовать прямо в HTML-файлах для тестирования стилей и внесения мелких изменений.
+            </h3>
+            <div class="baner-2"><h3><pre>
+    &lt;html&gt;
+      &lt;body&gt;
+         &lt;section style= "color: red;">&lt;/section&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+            </pre></h3></div>
+            <h3>
+                С другими примерами оформления CSS можно ознакомиться в официальном руководстве MDN.
+            </h3>
+            <h1>
+                Что еще может CSS
+            </h1>
+            <h3>
+                Выше я уже сказал, что CSS используется для всего визуального оформления документов. Но чтобы стало яснее, посмотрим на примеры использования разметки в коде. Так вы поймете, что возможностей у CSS куда больше, чем кажется.
+            </h3>
+            <h3>
+                Например, с помощью CSS можно задать параметры для SVG-изображения:
+            </h3>
+            <div class="baner-2"><h3><pre>
+    svg {
+        width: 120px;
+        height: 68px;
+        fill: green;
+    }
+            </pre></h3></div>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css4.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Или создать блоки div любых размеров с SVG-изображением в качестве фона:
+            </h3>
+            <div class="baner-2"><h3><pre>
+   .block {
+        width: 220px;
+        height: 192px;
+        background-image: url("../path-to-image/image.svg");
+   }
+            </pre></h3></div>
+            <h3>
+                Или же вовсе добавить в блок информацию, которой изначально нет в HTML-документе:
+            </h3>
+            <div class="baner-2"><h3><pre>
+   .block:after {
+        content: "kakoy-to-text";
+   }
+            </pre></h3></div>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css5.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Также можно добавлять контент или CSS-разметку на новые объекты, созданные вне HTML. Для этого в CSS есть псевдоселекторы :after и :before (они позволяют разместить новые элементы до или после выбранного объекта).
+            </h3>
+            <h3>
+                И даже это мелочи. С помощью CSS можно <a href="https://github.com/cyanharlow/purecss-francine">рисовать</a>, создавать объекты любых форм, анимировать их и т.п.
+            </h3>
+            <h1>
+                Препроцессоры и другие варианты реализации CSS
+            </h1>
+            <h3>
+                По умолчанию стили прописываются в текстовом файле, но это не единственный вариант. Базовый CSS не обладает преимуществами сложных языков программирования, переменными или вложением свойств.
+            </h3>
+            <h3>
+                Поэтому разработчики создали препроцессоры наподобие LESS. Это механизм на базе JavaScript, позволяющий внедрить в работу со стилями синтаксис и некоторые примитивные функции из JavaScript. Если вам кажется, что у CSS недостаточно функциональности, то следует ознакомиться с препроцессорами.
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css6.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Также CSS часто реализуется внутри фреймворков. Например, технология react-styled-components перенасыщает всю функциональность каскадных стилей напрямую в код на базе React. То есть можно в одном файле прописывать стили, структуру приложения и его логику.
+            </h3>
+            <h3>
+                Правда, такой стиль взаимодействия со стилями противоречит первоначальной идее CSS.
+            </h3>
+            <h1>
+                О концепции деления контента и его оформления
+            </h1>
+            <h3>
+                Сама идея разделить контент и его оформление на две части появилась в связи с необходимостью создавать сайты более сложных форматов – с уникальными стилевыми решениями, красивыми шрифтами, анимациями, произвольным порядком блоков и кучей других деталей, вынуждающих верстальщиков искать новые пути взаимодействия с HTML-документами.
+            </h3>
+            <h3>
+                Постепенно вебмастеры и разработчики отказались от стандартного оформления страниц с помощью таблиц (это встроенный в HTML синтаксис, не требующий дополнительных инструментов для оформления), потому что это усложняло структуру страниц. HTML-файлы сильно раздувались, ими было сложно управлять, а способов оформить хотя бы текст больше не становилось. Но всех спас CSS.
+            </h3>
+            <h3>
+                Правда, даже CSS может заметно увеличить размеры HTML и сделать его трудночитаемым, если применять каскадные таблицы прямо в основном документе. Поэтому за правило взято оформление CSS-разметки в отдельном файле, который затем подключается к условному index.html, а тот уже подтягивает нужные стили.
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css7.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Т.е. файлы HTML и CSS живут раздельно.
+            </h3>
+            <h1>
+                Основные принципы построения макетов с помощью CSS
+            </h1>
+            <h3>
+                Одна из ключевых задач CSS в современной верстке – создание макетов сайта. HTML уже не играет такой важной роли в том, как будут размещены объекты. HTML-документ отвечает за структуру и вложенность элементов, что упрощает чтение сайтов скринридерами и дальнейшую разметку с использованием каскадных стилей.
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css8.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Для расположения элементов на «полотне» сайта используются две основные методики:
+            </h3>
+            <h3>
+            <ol>
+                <li>
+                     Flex – позволяет автоматически распределить объекты в блоке за счет создания блоков-оберток со свойством flex.
+                </li>
+                <li>
+                    Grid – позволяет отказаться от оберток и размещать объекты по сетке.
+                </li>
+            </ol>
+            </h3>
+            <h3>
+                Оба метода позволяют создавать сайты, элементы которых всегда занимают корректную позицию и адаптируются под меняющееся разрешение экрана.
+            </h3>
+
+            <h1>
+                Как изучить и начать использовать CSS?
+            </h1>
+            <h3>
+                Каскадные таблицы стилей – на удивление интуитивная вещь. Даже новички успешно справляют с самостоятельным изучением разметки без обращения за помощью к профессиональным разработчикам и дизайнерам. Достаточно обращаться в Google за описанием свойств стилей и запоминать их.
+            </h3>
+            <h3>
+                Но есть загвоздки. В частности, они касаются методик создания макетов. С ходу понять их тяжело, поэтому нужно хорошее руководство.
+            </h3>
+            <h3>
+                Ну и нельзя забывать про великое множество курсов для веб-разработчиков. Они всегда покрывают углубленное знакомство с HTML, CSS и JavaScript, причем качество изучения стилей почти везде находится на одному уровне. Не нужно отдавать сумасшедшие деньги за дорогие курсы, можно выбрать какой-нибудь бюджетный вариант (если интересует именно CSS).
+            </h3>
+
+            <h1>
+                Где и как редактировать разметку?
+            </h1>
+            <h3>
+                Если вы уже сейчас хотите опробовать свои силы, то можно создать стили с помощью любого текстового редактора. Создаем файл в формате .css, а потом вписываем туда свойства и их значения в соответствии с синтаксисом разметки.
+            </h3>
+            <div class="mui--text-center">
+                <div class="stk-mask" data-ce-tag="mask">
+                    <img src="/img/css9.png" width="800" height="480">
+                </div>
+            </div>
+            <h3>
+                Лучше использовать специализированные редакторы и IDE. Они автоматически дополнят код, подскажут свойства и их значения, сообщат об обнаруженных ошибках, упростят выбор цветов и так далее. Рекомендую использовать редактор VS Code (своего рода стандарт). Он бесплатный и функциональный. Но есть и другие варианты.
+            </h3>
+            <h3>
+                Чтобы внесенные в CSS-файл изменения возымели эффект над HTML-документом, первый нужно подключить ко второму. Для этого в head-тег HTML-файла нужно добавить ссылку в формате:
+            </h3>
+            <div class="baner-2"><h3><pre>
+   &lt;link rel="stylesheet" href="style.css"&gt;
+            </pre></h3></div>
+
+            <h1>
+                Вместо заключения
+            </h1>
+            <h3>
+                На этом все. Как видите, CSS – это мощный инструмент для оформления сайтов, без которого невозможно сделать красивую страницу (даже если использовать какие-либо фреймворки типа React).
+            </h3>
+            <h3>
+                Глубокое изучение каскадных таблиц поможет сделать ваши сайты более стильными, при этом не перебарщивая с количеством JS-кода, что положительно скажется на производительности ресурса.
+            </h3>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://rutube.ru/play/embed/f0b3ccf2245fcffe7cf89466a9bc99a3/" frameborder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer id="footer">
+    <div class="mui--text-left">
+        <div class="mui-container-fluid">
+            <h3>
+                Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+            </h3>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
