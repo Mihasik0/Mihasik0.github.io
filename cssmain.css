@@ -38,7 +38,7 @@ buttons {
 }
 
 .mui-appbar {
-    background-color: #0269e5; /* Цвет фона для примера */
+    background-color: #333333; /* Цвет фона для примера */
 }
 
 .hidden {
@@ -79,19 +79,23 @@ header ul.mui-list--inline {
 .icon-toggle {
     margin-top: 15px; /* Установите желаемое значение отступа сверху */
 }
+.mui-btn--primary{
+    background-color: #504f4f;
+}
+
 
 #sidedrawer ul li a {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     color: white;
-    background: #096fd9; /* Начальный цвет фона */
+    background: #504f4f; /* Начальный цвет фона */
     transition: background 0.5s ease;
     border-radius: 5px;
 }
 
 #sidedrawer ul li a:hover {
-    background: linear-gradient(270deg, #096fd9, #feb47b);
+    background: #333333;
     background-size: 200% 200%;
     animation: gradient 3s ease infinite;
 }
@@ -126,7 +130,7 @@ header ul.mui-list--inline {
 }
 
 .mui-tabs__bar {
-    background-color: #096fd9; /* Темный фон для панели вкладок */
+    background-color: #333333; /* Темный фон для панели вкладок */
 }
 
 .mui-tabs__bar li {
@@ -142,36 +146,36 @@ header ul.mui-list--inline {
 }
 
 .mui-tabs__bar li:hover a h4 {
-    background-color: #bd5b49; /* Цвет фона при наведении */
+    background-color: #504f4f; /* Цвет фона при наведении */
 }
 
 .tag-1 a h4 {
-    background-color: #fd7d5f; /* Фоновый цвет для активной вкладки */
+    background-color: #504f4f; /* Фоновый цвет для активной вкладки */
     border-radius: 5px; /* Закругление углов для вкладки */
 }
 
 .tag-2 a h4 {
-    background-color: #fd7d5f; /* Фоновый цвет для активной вкладки */
+    background-color: #504f4f; /* Фоновый цвет для активной вкладки */
     border-radius: 5px; /* Закругление углов для вкладки */
 }
 
 .tag-3 a h4 {
-    background-color: #fd7d5f; /* Фоновый цвет для активной вкладки */
+    background-color: #504f4f; /* Фоновый цвет для активной вкладки */
     border-radius: 5px; /* Закругление углов для вкладки */
 }
 
 .tag-1{
-    background-color: #096fd9;
+    background-color: #333333;
     color: white;
 }
 
 .tag-2{
-    background-color: #096fd9;
+    background-color: #333333;
     color: white;
 }
 
 .tag-3{
-    background-color: #096fd9;
+    background-color: #333333;
     color: white;
 }
 
@@ -205,7 +209,7 @@ header ul.mui-list--inline {
     left: -200px;
     overflow: auto;
     z-index: 2;
-    background: linear-gradient(270deg, #096fd9, #feb47b);
+    background: #333333;
     transition: transform 0.2s;
 }
 
@@ -226,13 +230,35 @@ header ul.mui-list--inline {
     padding-bottom: 160px;
 }
 
+#footere {
+    background-color: #333333;
+    padding: 1em;
+    text-align: left;
+}
+#footere {
+    background-color: #333333;
+    color: #fff;
+}
 
-#footer {
+#footere a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+#footere {
     box-sizing: border-box;
     height: 160px;
     margin-left: 0px;
     transition: margin-left 0.2s;
 }
+
+
+
+.mui-container-fluid{
+    background-color: #333333;
+}
+
 
 @media (min-width: 768px) {
     #header {
@@ -247,8 +273,9 @@ header ul.mui-list--inline {
         margin-left: 200px;
     }
 
-    #footer {
+    #footere {
         margin-left: 200px;
+        background-color: #333333;
     }
 
     body.hide-sidedrawer #header {
@@ -326,7 +353,7 @@ header ul.mui-list--inline {
 }
 
 #sidedrawer strong:hover {
-    background: linear-gradient(270deg, #fcb37b, #096fd9);
+    background: #504f4f;
 }
 
 #sidedrawer strong + ul > li {
@@ -470,7 +497,7 @@ kpg{
     border: 1px solid rgb(230, 230, 231); /* Добавил толщину границы для лучшей видимости */
     margin: 20px auto;
     padding: 10px 20px; /* Отступ слева и справа */
-    width: 90%; 
+    width: 90%;
     max-width: 1200px;
     font-size: 16px; /*  Заменил 5vw на фиксированный размер для лучшей читаемости.  5vw может быть слишком большим на маленьких экранах. */
     word-break: break-word; /*  Лучше для переноса слов */
